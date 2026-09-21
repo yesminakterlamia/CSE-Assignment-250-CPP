@@ -1,21 +1,20 @@
 #include <iostream>
 using namespace std;
+int main()
 
-int main() {
-    int totalDays;
- cout << "Enter total number of days: ";
-    cin >> totalDays;
+{
+    int days,years, months;
+    cout << "Enter total days: ";
+    cin >> days;
 
-int years = totalDays / 365;
-    int remainingAfterYears = totalDays % 365;
+    years = days / 365;
+    days = days % 365;
+    months = days / 30;
+    days = days % 30;
 
-int months = remainingAfterYears / 30;
-    int days = remainingAfterYears % 30;
+    cout << "Years = " << years << endl;
+    cout << "Months = " << months << endl;
+    cout << "Days = " << days;
 
- cout << totalDays << " days = "
-       
-     << years << " years, "
-   << months << " months, "
-       << days << " days" << endl;
     return 0;
 }
