@@ -1,19 +1,17 @@
 #include <iostream>
 using namespace std;
+int main()
+{
+    int seconds, hours, minutes;
+    cout << "Enter total seconds: ";
+    cin >> seconds;
+    hours = seconds / 3600;
+    seconds = seconds % 3600;
+    minutes = seconds / 60;
+    seconds = seconds % 60;
+    cout << "Hours = " << hours << endl;
+    cout << "Minutes = " << minutes << endl;
+    cout << "Seconds = " << seconds;
 
-int main() {
-    long totalSeconds;
- cout << "Enter total seconds: ";
- cin >> totalSeconds;
-
-  long hours = totalSeconds / 3600;
-  long remaining = totalSeconds % 3600;
-  long minutes = remaining / 60;
- long seconds = remaining % 60;
-
-    cout << totalSeconds << " seconds = "
-   << hours << " hours, "
-        << minutes << "  minutes, "
-      << seconds << " seconds" << endl;
     return 0;
 }
