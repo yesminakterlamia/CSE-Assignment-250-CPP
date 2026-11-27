@@ -1,0 +1,14 @@
+//152. Write a C++ program to sort characters of a string.
+
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main()
+{
+    string str;
+    cout<<"Enter a string: ";
+    cin>>str;
+    sort(str.begin(), str.end());
+    cout<<"Sorted string: "<<str;
+    return 0;
+}
